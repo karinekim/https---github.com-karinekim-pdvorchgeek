@@ -1,0 +1,17 @@
+{
+ "name": "pdvorchgeek",
+ "version": "1.0.0",
+ "main": "index.js",
+ "scripts": {
+  "start": "json-server --watch produtos.json --port 3000"
+},
+ "keywords": [],
+ "author": "karinekim",
+ "license": "ISC",
+ "dependencies": {
+   "json-server": "^1.0.0-beta.0"
+ },
+ "devDependencies": {},
+ "description": "e-comerce"
+}
+ 

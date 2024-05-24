@@ -1,0 +1,32 @@
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.product img {
+    max-width: 100%;
+}
+.product-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.product-description {
+    font-size: 1em;
+    margin: 10px 0;
+}
+.product-price {
+    font-size: 1.2em;
+    color: green;
+    margin: 10px 0;
+}
+.product-category {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+.product-quantity {
+    font-size: 1em;
+    margin: 10px 0;
+}

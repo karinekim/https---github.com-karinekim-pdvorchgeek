@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #03318c;
+    --cor-terciaria: #5300C8;
+    --cor-hover: #8c0375;
+    --button-color: #03318c;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);    
+}
+.cabecalho {
+    padding: 2% 0 0 15%; /* Ajuste das porcentagens */
+    width: 100%;
+    display: flex;
+    gap: 80px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    justify-content: space-between;    
+  }
+  
+  .cabecalho__menu {
+    display: flex;     
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+.apresentacao__imagem{
+    width: 50%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  .item {
+    width: 320px;
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .item p {
+    margin: 8px 0;
+  }
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrap {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+       
+  .btn {
+    background-color: var(--cor-primaria);
+    border: none;
+    cursor: pointer;
+    height: 44px;
+    text-decoration: none;
+    color: (--cor-secundaria);
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: var(--fonte-primaria);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .btn:hover {
+    color: #cecdcd;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--text-description-color);
+  }
+  
+  .livros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: var(--fonte-primaria);
+  }
+  
+  .livro {
+    width: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .indisponivel {
+    opacity: 0.3;
+  }
+  
+  .livro__titulo {
+    color: var(--text-title-color);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+  }
+  
+  .livro__descricao {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-author-color);
+    margin: 1rem 0;
+  }
+  
+  .livro__preco {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 350;
+    color: var(--text-price-color);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .tag {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 250;
+    color: var(--text-tag-color);
+    padding: 5px 4px;
+    background: rgba(197, 197, 197, 0.25);
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .livros__disponiveis {
+    width: 100%;
+    height: 80px;
+    background-color: var(--text-description-color);
+    margin-top: 1rem;
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .livros__disponiveis p {
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 2.5em;
+  } 
+        
+
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: space-between;
+        text-align: center;
+
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        font-size: 0.8rem;
+        }
+      }
+      
+          
+   /* @media(min-width: 834px) {
+
+        .produtos__container {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+    
+    @media(min-width: 1440px) {
+        .produtos__item {
+            width: 50%;
+            height: 25%;
+        }*/
+       
+        
+}
